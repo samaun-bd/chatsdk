@@ -1,0 +1,1086 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		77A277CF1BF74F8C0051DB07 /* IMSDKFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 77A277D01BF74F8C0051DB07 /* Build configuration list for PBXAggregateTarget "IMSDKFramework" */;
+			buildPhases = (
+				77A277D41BF7500C0051DB07 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = IMSDKFramework;
+			productName = IMSDKFramework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0DC519CF1DC1F27C00F6488D /* blocking_downloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519C61DC1F27C00F6488D /* blocking_downloader.cpp */; };
+		0DC519D01DC1F27C00F6488D /* blocking_uploader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519C71DC1F27C00F6488D /* blocking_uploader.cpp */; };
+		0DC519D11DC1F27C00F6488D /* chunking_downloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519C81DC1F27C00F6488D /* chunking_downloader.cpp */; };
+		0DC519D21DC1F27C00F6488D /* chunking_uploader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519C91DC1F27C00F6488D /* chunking_uploader.cpp */; };
+		0DC519D31DC1F27C00F6488D /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519CA1DC1F27C00F6488D /* manager.cpp */; };
+		0DC519D41DC1F27C00F6488D /* non_blocking_downloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519CB1DC1F27C00F6488D /* non_blocking_downloader.cpp */; };
+		0DC519D51DC1F27C00F6488D /* non_blocking_uploader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519CC1DC1F27C00F6488D /* non_blocking_uploader.cpp */; };
+		0DC519D61DC1F27C00F6488D /* response.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519CD1DC1F27C00F6488D /* response.cpp */; };
+		0DC519D71DC1F27C00F6488D /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519CE1DC1F27C00F6488D /* utils.cpp */; };
+		0DC519E01DC1F2C600F6488D /* curl_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519DB1DC1F2C600F6488D /* curl_handler.cpp */; };
+		0DC519E11DC1F2C600F6488D /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519DC1DC1F2C600F6488D /* manager.cpp */; };
+		0DC519E21DC1F2C600F6488D /* request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519DD1DC1F2C600F6488D /* request.cpp */; };
+		0DC519E31DC1F2C600F6488D /* response.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519DE1DC1F2C600F6488D /* response.cpp */; };
+		0DC519E41DC1F2C600F6488D /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519DF1DC1F2C600F6488D /* utils.cpp */; };
+		0DC519E81DC1F30700F6488D /* json11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519E71DC1F30700F6488D /* json11.cpp */; };
+		0DC519ED1DC1F32500F6488D /* byte_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519E91DC1F32500F6488D /* byte_parser.cpp */; };
+		0DC519EE1DC1F32500F6488D /* file_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519EA1DC1F32500F6488D /* file_system.cpp */; };
+		0DC519EF1DC1F32500F6488D /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519EB1DC1F32500F6488D /* types.cpp */; };
+		0DC519F01DC1F32500F6488D /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC519EC1DC1F32500F6488D /* utils.cpp */; };
+		0DC51A081DC1FB4D00F6488D /* CloudNotificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DC51A071DC1FB4D00F6488D /* CloudNotificationHandler.cpp */; };
+		0DC51A0A1DC1FB5700F6488D /* CloudNotificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC51A091DC1FB5700F6488D /* CloudNotificationHandler.h */; };
+		0DC51A131DC1FE4400F6488D /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC51A121DC1FE4400F6488D /* libcurl.a */; };
+		77A277B91BF74F4E0051DB07 /* IMSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77A277B81BF74F4E0051DB07 /* IMSDK.h */; };
+		8E059A701CCC7DBF00F3B915 /* IMPacketTimeId.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E059A6F1CCC7DBF00F3B915 /* IMPacketTimeId.mm */; };
+		8E059A721CCC7DD500F3B915 /* IMPacketTimeId.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E059A711CCC7DD500F3B915 /* IMPacketTimeId.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0BB5FB1C61C25000A9BB4E /* IMSDKTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0BB5FA1C61C25000A9BB4E /* IMSDKTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E19A5C01CCB45080008610B /* PublicChatMemberDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E19A5BC1CCB45080008610B /* PublicChatMemberDTO.cpp */; };
+		8E19A5C11CCB45080008610B /* PublicChatMemberDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E19A5BD1CCB45080008610B /* PublicChatMemberDTO.h */; };
+		8E19A5C21CCB45080008610B /* RoomDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E19A5BE1CCB45080008610B /* RoomDTO.cpp */; };
+		8E19A5C31CCB45080008610B /* RoomDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E19A5BF1CCB45080008610B /* RoomDTO.h */; };
+		8E19A5CF1CCB46120008610B /* DuplicateChecker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E19A5C41CCB46120008610B /* DuplicateChecker.cpp */; };
+		8E19A5D01CCB46120008610B /* DuplicateChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E19A5C51CCB46120008610B /* DuplicateChecker.h */; };
+		8E19A5D11CCB46120008610B /* FileSDKHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E19A5C61CCB46120008610B /* FileSDKHandler.h */; };
+		8E19A5D21CCB46120008610B /* FriendInformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E19A5C71CCB46120008610B /* FriendInformation.cpp */; };
+		8E19A5D31CCB46120008610B /* FriendInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E19A5C81CCB46120008610B /* FriendInformation.h */; };
+		8E19A5D61CCB46120008610B /* PacketTimeId.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E19A5CB1CCB46120008610B /* PacketTimeId.cpp */; };
+		8E19A5D71CCB46120008610B /* PacketTimeId.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E19A5CC1CCB46120008610B /* PacketTimeId.h */; };
+		8E19A5D81CCB46120008610B /* UnifiedProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E19A5CD1CCB46120008610B /* UnifiedProcessor.cpp */; };
+		8E19A5D91CCB46120008610B /* UnifiedProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E19A5CE1CCB46120008610B /* UnifiedProcessor.h */; };
+		8E22B0A71D1A57060095C952 /* IMPublicChatMemberModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E73B6F71D0C3533002192E2 /* IMPublicChatMemberModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E2A569D1D053665003B5630 /* SDKMessageDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A569B1D053665003B5630 /* SDKMessageDTO.cpp */; };
+		8E2A569E1D053665003B5630 /* SDKMessageDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2A569C1D053665003B5630 /* SDKMessageDTO.h */; };
+		8E334A171DD337D700468BFD /* worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E334A161DD337D700468BFD /* worker.cpp */; };
+		8E39196C1DCF06E400586616 /* ConversationDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3919691DCF06E400586616 /* ConversationDTO.cpp */; };
+		8E39196D1DCF06E400586616 /* ConversationDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E39196A1DCF06E400586616 /* ConversationDTO.h */; };
+		8E39196E1DCF06E400586616 /* ParserTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E39196B1DCF06E400586616 /* ParserTypes.h */; };
+		8E3A80941E9A189000FF2B39 /* DataEncryption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A80911E9A189000FF2B39 /* DataEncryption.cpp */; };
+		8E3A80951E9A189000FF2B39 /* HashAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A80921E9A189000FF2B39 /* HashAlgorithm.cpp */; };
+		8E3A80961E9A189000FF2B39 /* HashAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3A80931E9A189000FF2B39 /* HashAlgorithm.h */; };
+		8E3BEA0C1DE07FCB002715D0 /* IMConversationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E3BEA0A1DE07FCB002715D0 /* IMConversationModel.mm */; };
+		8E3BEA0D1DE07FCB002715D0 /* IMConversationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3BEA0B1DE07FCB002715D0 /* IMConversationModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E53172F1E127AFE00BD39CE /* DataEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E53172C1E127AFE00BD39CE /* DataEncryption.h */; };
+		8E5317301E127AFE00BD39CE /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E53172D1E127AFE00BD39CE /* sha1.cpp */; };
+		8E5317311E127AFE00BD39CE /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E53172E1E127AFE00BD39CE /* sha1.h */; };
+		8E5980881C143C270047F64F /* SeenPacketDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E5980861C143C270047F64F /* SeenPacketDTO.cpp */; };
+		8E5980891C143C270047F64F /* SeenPacketDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5980871C143C270047F64F /* SeenPacketDTO.h */; };
+		8E61011E1DFD404500084CF7 /* blocking_progress_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E61011C1DFD404500084CF7 /* blocking_progress_handler.cpp */; };
+		8E61011F1DFD404500084CF7 /* chunk_progress_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E61011D1DFD404500084CF7 /* chunk_progress_handler.cpp */; };
+		8E6101221DFD40A100084CF7 /* InternetChecker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6101201DFD40A100084CF7 /* InternetChecker.cpp */; };
+		8E6101231DFD40A100084CF7 /* InternetChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6101211DFD40A100084CF7 /* InternetChecker.h */; };
+		8E64C7DA1E361E4C003912EC /* http_cloud_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E64C7D91E361E4C003912EC /* http_cloud_config.cpp */; };
+		8E6BFEAF1C5E0200003F9C08 /* FriendMessageStatusDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6BFEAC1C5E0200003F9C08 /* FriendMessageStatusDTO.h */; };
+		8E6BFEB01C5E0200003F9C08 /* GroupActivityDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6BFEAD1C5E0200003F9C08 /* GroupActivityDTO.h */; };
+		8E6BFEB11C5E0200003F9C08 /* GroupDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6BFEAE1C5E0200003F9C08 /* GroupDTO.h */; };
+		8E6BFEB51C5E020E003F9C08 /* FriendMessageStatusDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BFEB21C5E020E003F9C08 /* FriendMessageStatusDTO.cpp */; };
+		8E6BFEB61C5E020E003F9C08 /* GroupActivityDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BFEB31C5E020E003F9C08 /* GroupActivityDTO.cpp */; };
+		8E6BFEB71C5E020E003F9C08 /* GroupDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BFEB41C5E020E003F9C08 /* GroupDTO.cpp */; };
+		8E73B6F21D0BE5E3002192E2 /* IMRoomModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E73B6F11D0BE5E3002192E2 /* IMRoomModel.mm */; };
+		8E73B6F41D0BE5F4002192E2 /* IMRoomModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E73B6F31D0BE5F4002192E2 /* IMRoomModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E73B6F61D0C3520002192E2 /* IMPublicChatMemberModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E73B6F51D0C3520002192E2 /* IMPublicChatMemberModel.mm */; };
+		8E86576D1D50B6090055F996 /* IMNetworkDataModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E86576C1D50B6090055F996 /* IMNetworkDataModel.mm */; };
+		8E86576F1D50B6B80055F996 /* IMNetworkDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E86576E1D50B6B80055F996 /* IMNetworkDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E92D8911BF7534800F3C5A7 /* IMSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77A277BA1BF74F4E0051DB07 /* IMSDK.mm */; };
+		8E92D8931BF754FB00F3C5A7 /* IMSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A277B81BF74F4E0051DB07 /* IMSDK.h */; };
+		8E92D89F1BF7562600F3C5A7 /* ByteArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8941BF7562600F3C5A7 /* ByteArray.cpp */; };
+		8E92D8A01BF7562600F3C5A7 /* ByteArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8951BF7562600F3C5A7 /* ByteArray.h */; };
+		8E92D8A11BF7562600F3C5A7 /* ChatParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8961BF7562600F3C5A7 /* ChatParser.cpp */; };
+		8E92D8A21BF7562600F3C5A7 /* ChatParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8971BF7562600F3C5A7 /* ChatParser.h */; };
+		8E92D8A31BF7562600F3C5A7 /* global.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8981BF7562600F3C5A7 /* global.h */; };
+		8E92D8A41BF7562600F3C5A7 /* MemberDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8991BF7562600F3C5A7 /* MemberDTO.cpp */; };
+		8E92D8A51BF7562600F3C5A7 /* MemberDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D89A1BF7562600F3C5A7 /* MemberDTO.h */; };
+		8E92D8A61BF7562600F3C5A7 /* PacketDTO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D89B1BF7562600F3C5A7 /* PacketDTO.cpp */; };
+		8E92D8A71BF7562600F3C5A7 /* PacketDTO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D89C1BF7562600F3C5A7 /* PacketDTO.h */; };
+		8E92D8A81BF7562600F3C5A7 /* PacketTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D89D1BF7562600F3C5A7 /* PacketTemplate.cpp */; };
+		8E92D8A91BF7562600F3C5A7 /* PacketTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D89E1BF7562600F3C5A7 /* PacketTemplate.h */; };
+		8E92D8DA1BF7564700F3C5A7 /* Chat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8AB1BF7564700F3C5A7 /* Chat.cpp */; };
+		8E92D8DB1BF7564700F3C5A7 /* Chat.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8AC1BF7564700F3C5A7 /* Chat.h */; };
+		8E92D8DC1BF7564700F3C5A7 /* KeepaliveProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8AD1BF7564700F3C5A7 /* KeepaliveProcessor.cpp */; };
+		8E92D8DD1BF7564700F3C5A7 /* KeepaliveProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8AE1BF7564700F3C5A7 /* KeepaliveProcessor.h */; };
+		8E92D8DE1BF7564700F3C5A7 /* PacketReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8AF1BF7564700F3C5A7 /* PacketReceiver.cpp */; };
+		8E92D8DF1BF7564700F3C5A7 /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8B01BF7564700F3C5A7 /* Socket.cpp */; };
+		8E92D8E01BF7564700F3C5A7 /* ChatPacketBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8B11BF7564700F3C5A7 /* ChatPacketBuilder.cpp */; };
+		8E92D8E11BF7564700F3C5A7 /* IChatEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8B21BF7564700F3C5A7 /* IChatEventHandler.h */; };
+		8E92D8E21BF7564700F3C5A7 /* ApiStatus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8B31BF7564700F3C5A7 /* ApiStatus.cpp */; };
+		8E92D8E31BF7564700F3C5A7 /* ApiStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8B41BF7564700F3C5A7 /* ApiStatus.h */; };
+		8E92D8E41BF7564700F3C5A7 /* ChatEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8B51BF7564700F3C5A7 /* ChatEvent.cpp */; };
+		8E92D8E51BF7564700F3C5A7 /* ChatEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8B61BF7564700F3C5A7 /* ChatEvent.h */; };
+		8E92D8E61BF7564700F3C5A7 /* ChatPacketBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8B71BF7564700F3C5A7 /* ChatPacketBuilder.h */; };
+		8E92D8E71BF7564700F3C5A7 /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8B81BF7564700F3C5A7 /* Connection.cpp */; };
+		8E92D8E81BF7564700F3C5A7 /* Connection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8B91BF7564700F3C5A7 /* Connection.h */; };
+		8E92D8E91BF7564700F3C5A7 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8BA1BF7564700F3C5A7 /* Event.cpp */; };
+		8E92D8EA1BF7564700F3C5A7 /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8BB1BF7564700F3C5A7 /* Event.h */; };
+		8E92D8EB1BF7564700F3C5A7 /* EventProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8BC1BF7564700F3C5A7 /* EventProcessor.cpp */; };
+		8E92D8EC1BF7564700F3C5A7 /* EventProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8BD1BF7564700F3C5A7 /* EventProcessor.h */; };
+		8E92D8EE1BF7564700F3C5A7 /* IChatEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8BF1BF7564700F3C5A7 /* IChatEventHandler.cpp */; };
+		8E92D8EF1BF7564700F3C5A7 /* IEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8C01BF7564700F3C5A7 /* IEventHandler.h */; };
+		8E92D8F01BF7564700F3C5A7 /* KeepalivePacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8C11BF7564700F3C5A7 /* KeepalivePacket.cpp */; };
+		8E92D8F11BF7564700F3C5A7 /* KeepalivePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8C21BF7564700F3C5A7 /* KeepalivePacket.h */; };
+		8E92D8F41BF7564700F3C5A7 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8C51BF7564700F3C5A7 /* Logger.cpp */; };
+		8E92D8F51BF7564700F3C5A7 /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8C61BF7564700F3C5A7 /* Logger.h */; };
+		8E92D8F61BF7564700F3C5A7 /* PacketProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8C71BF7564700F3C5A7 /* PacketProcessor.cpp */; };
+		8E92D8F71BF7564700F3C5A7 /* PacketProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8C81BF7564700F3C5A7 /* PacketProcessor.h */; };
+		8E92D8F81BF7564700F3C5A7 /* PacketReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8C91BF7564700F3C5A7 /* PacketReceiver.h */; };
+		8E92D8FA1BF7564700F3C5A7 /* Processor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8CB1BF7564700F3C5A7 /* Processor.h */; };
+		8E92D8FC1BF7564700F3C5A7 /* QueueElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8CD1BF7564700F3C5A7 /* QueueElement.h */; };
+		8E92D8FD1BF7564700F3C5A7 /* ResendProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8CE1BF7564700F3C5A7 /* ResendProcessor.cpp */; };
+		8E92D8FE1BF7564700F3C5A7 /* ResendProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8CF1BF7564700F3C5A7 /* ResendProcessor.h */; };
+		8E92D8FF1BF7564700F3C5A7 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8D01BF7564700F3C5A7 /* ResourceManager.cpp */; };
+		8E92D9001BF7564700F3C5A7 /* ResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8D11BF7564700F3C5A7 /* ResourceManager.h */; };
+		8E92D9011BF7564700F3C5A7 /* Scheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8D21BF7564700F3C5A7 /* Scheduler.cpp */; };
+		8E92D9021BF7564700F3C5A7 /* Scheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8D31BF7564700F3C5A7 /* Scheduler.h */; };
+		8E92D9051BF7564700F3C5A7 /* Socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8D61BF7564700F3C5A7 /* Socket.h */; };
+		8E92D9061BF7564700F3C5A7 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D8D71BF7564700F3C5A7 /* Thread.cpp */; };
+		8E92D9071BF7564700F3C5A7 /* Thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8D81BF7564700F3C5A7 /* Thread.h */; };
+		8E92D9081BF7564700F3C5A7 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D8D91BF7564700F3C5A7 /* Types.h */; };
+		8E92D91B1BF7571F00F3C5A7 /* IMGroupMemberModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D90E1BF7571F00F3C5A7 /* IMGroupMemberModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E92D91C1BF7571F00F3C5A7 /* IMGroupMemberModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D90F1BF7571F00F3C5A7 /* IMGroupMemberModel.mm */; };
+		8E92D91D1BF7571F00F3C5A7 /* IMAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D9101BF7571F00F3C5A7 /* IMAdapter.h */; };
+		8E92D91E1BF7571F00F3C5A7 /* IMAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D9111BF7571F00F3C5A7 /* IMAdapter.mm */; };
+		8E92D91F1BF7571F00F3C5A7 /* IMApiStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D9121BF7571F00F3C5A7 /* IMApiStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E92D9201BF7571F00F3C5A7 /* IMApiStatus.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D9131BF7571F00F3C5A7 /* IMApiStatus.mm */; };
+		8E92D9211BF7571F00F3C5A7 /* IMHandlerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D9141BF7571F00F3C5A7 /* IMHandlerAdapter.h */; };
+		8E92D9221BF7571F00F3C5A7 /* IMHandlerAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D9151BF7571F00F3C5A7 /* IMHandlerAdapter.mm */; };
+		8E92D9231BF7571F00F3C5A7 /* IMHandlerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D9161BF7571F00F3C5A7 /* IMHandlerDelegate.h */; };
+		8E92D9241BF7571F00F3C5A7 /* IMHandlerDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D9171BF7571F00F3C5A7 /* IMHandlerDelegate.mm */; };
+		8E92D9251BF7571F00F3C5A7 /* IMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D9181BF7571F00F3C5A7 /* IMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E92D9261BF7571F00F3C5A7 /* IMManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E92D9191BF7571F00F3C5A7 /* IMManager.mm */; };
+		8E92D9271BF7571F00F3C5A7 /* IMReceivedMessageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E92D91A1BF7571F00F3C5A7 /* IMReceivedMessageDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EABC8E91D3614E8007BD673 /* GroupInformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EABC8E71D3614E8007BD673 /* GroupInformation.cpp */; };
+		8EABC8EA1D3614E8007BD673 /* GroupInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EABC8E81D3614E8007BD673 /* GroupInformation.h */; };
+		8EB70ED71D0D40FC009ADE7F /* IMFriendInformationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EB70ED61D0D40FC009ADE7F /* IMFriendInformationModel.mm */; };
+		8EB70ED91D0D410D009ADE7F /* IMFriendInformationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB70ED81D0D410D009ADE7F /* IMFriendInformationModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EB70EDB1D0D4171009ADE7F /* IMGroupInformationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EB70EDA1D0D4171009ADE7F /* IMGroupInformationModel.mm */; };
+		8EB70EDD1D0D417C009ADE7F /* IMGroupInformationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB70EDC1D0D417C009ADE7F /* IMGroupInformationModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC3B7AB1C60A57C00EB1FD4 /* IMMessageStatusModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3B7A91C60A57C00EB1FD4 /* IMMessageStatusModel.mm */; };
+		8EC3B7AC1C60A57C00EB1FD4 /* IMMessageStatusModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC3B7AA1C60A57C00EB1FD4 /* IMMessageStatusModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC3B7AF1C60A73B00EB1FD4 /* IMGroupModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3B7AD1C60A73B00EB1FD4 /* IMGroupModel.mm */; };
+		8EC3B7B01C60A73B00EB1FD4 /* IMGroupModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC3B7AE1C60A73B00EB1FD4 /* IMGroupModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC3B7B71C60ABC000EB1FD4 /* IMGroupActivityModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3B7B51C60ABC000EB1FD4 /* IMGroupActivityModel.mm */; };
+		8EC3B7B81C60ABC000EB1FD4 /* IMGroupActivityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC3B7B61C60ABC000EB1FD4 /* IMGroupActivityModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC635DE1D0804E40098C25C /* IMMessageModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC635DD1D0804E40098C25C /* IMMessageModel.mm */; };
+		8EC635E01D0804F80098C25C /* IMMessageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC635DF1D0804F80098C25C /* IMMessageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EDD07601D4F5EC10006DBB3 /* DataCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD075E1D4F5EC10006DBB3 /* DataCounter.cpp */; };
+		8EDD07611D4F5EC10006DBB3 /* DataCounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDD075F1D4F5EC10006DBB3 /* DataCounter.h */; };
+		8EE409731D3E319700650C89 /* IOSLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EE409721D3E319700650C89 /* IOSLogger.mm */; };
+		8EE409751D3E31BD00650C89 /* IOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE409741D3E31BD00650C89 /* IOSLogger.h */; };
+		8EFC58D71E07C385001FD52B /* encode_decode_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC58D61E07C385001FD52B /* encode_decode_util.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77A277B31BF74F4E0051DB07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				77A277B91BF74F4E0051DB07 /* IMSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DC519C61DC1F27C00F6488D /* blocking_downloader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = blocking_downloader.cpp; path = ../../../../../ipvcore/core/cloud/blocking_downloader.cpp; sourceTree = "<group>"; };
+		0DC519C71DC1F27C00F6488D /* blocking_uploader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = blocking_uploader.cpp; path = ../../../../../ipvcore/core/cloud/blocking_uploader.cpp; sourceTree = "<group>"; };
+		0DC519C81DC1F27C00F6488D /* chunking_downloader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = chunking_downloader.cpp; path = ../../../../../ipvcore/core/cloud/chunking_downloader.cpp; sourceTree = "<group>"; };
+		0DC519C91DC1F27C00F6488D /* chunking_uploader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = chunking_uploader.cpp; path = ../../../../../ipvcore/core/cloud/chunking_uploader.cpp; sourceTree = "<group>"; };
+		0DC519CA1DC1F27C00F6488D /* manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../../../../../ipvcore/core/cloud/manager.cpp; sourceTree = "<group>"; };
+		0DC519CB1DC1F27C00F6488D /* non_blocking_downloader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = non_blocking_downloader.cpp; path = ../../../../../ipvcore/core/cloud/non_blocking_downloader.cpp; sourceTree = "<group>"; };
+		0DC519CC1DC1F27C00F6488D /* non_blocking_uploader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = non_blocking_uploader.cpp; path = ../../../../../ipvcore/core/cloud/non_blocking_uploader.cpp; sourceTree = "<group>"; };
+		0DC519CD1DC1F27C00F6488D /* response.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = response.cpp; path = ../../../../../ipvcore/core/cloud/response.cpp; sourceTree = "<group>"; };
+		0DC519CE1DC1F27C00F6488D /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = ../../../../../ipvcore/core/cloud/utils.cpp; sourceTree = "<group>"; };
+		0DC519DB1DC1F2C600F6488D /* curl_handler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = curl_handler.cpp; path = ../../../../../ipvcore/core/http/curl_handler.cpp; sourceTree = "<group>"; };
+		0DC519DC1DC1F2C600F6488D /* manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../../../../../ipvcore/core/http/manager.cpp; sourceTree = "<group>"; };
+		0DC519DD1DC1F2C600F6488D /* request.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = request.cpp; path = ../../../../../ipvcore/core/http/request.cpp; sourceTree = "<group>"; };
+		0DC519DE1DC1F2C600F6488D /* response.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = response.cpp; path = ../../../../../ipvcore/core/http/response.cpp; sourceTree = "<group>"; };
+		0DC519DF1DC1F2C600F6488D /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = ../../../../../ipvcore/core/http/utils.cpp; sourceTree = "<group>"; };
+		0DC519E71DC1F30700F6488D /* json11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = json11.cpp; path = ../../../../../ipvcore/core/third_party/json/json11.cpp; sourceTree = "<group>"; };
+		0DC519E91DC1F32500F6488D /* byte_parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = byte_parser.cpp; path = ../../../../../ipvcore/core/generic/byte_parser.cpp; sourceTree = "<group>"; };
+		0DC519EA1DC1F32500F6488D /* file_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = file_system.cpp; path = ../../../../../ipvcore/core/generic/file_system.cpp; sourceTree = "<group>"; };
+		0DC519EB1DC1F32500F6488D /* types.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = types.cpp; path = ../../../../../ipvcore/core/generic/types.cpp; sourceTree = "<group>"; };
+		0DC519EC1DC1F32500F6488D /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = ../../../../../ipvcore/core/generic/utils.cpp; sourceTree = "<group>"; };
+		0DC51A071DC1FB4D00F6488D /* CloudNotificationHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CloudNotificationHandler.cpp; path = ../../src/CloudNotificationHandler.cpp; sourceTree = "<group>"; };
+		0DC51A091DC1FB5700F6488D /* CloudNotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudNotificationHandler.h; path = ../../src/CloudNotificationHandler.h; sourceTree = "<group>"; };
+		0DC51A121DC1FE4400F6488D /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../../libs/curl/ios/libcurl.a; sourceTree = "<group>"; };
+		77A277B51BF74F4E0051DB07 /* libIMSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIMSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A277B81BF74F4E0051DB07 /* IMSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMSDK.h; sourceTree = "<group>"; };
+		77A277BA1BF74F4E0051DB07 /* IMSDK.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IMSDK.mm; sourceTree = "<group>"; };
+		8E059A6F1CCC7DBF00F3B915 /* IMPacketTimeId.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMPacketTimeId.mm; sourceTree = "<group>"; };
+		8E059A711CCC7DD500F3B915 /* IMPacketTimeId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPacketTimeId.h; sourceTree = "<group>"; };
+		8E0BB5FA1C61C25000A9BB4E /* IMSDKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSDKTypes.h; sourceTree = "<group>"; };
+		8E19A5BC1CCB45080008610B /* PublicChatMemberDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PublicChatMemberDTO.cpp; path = ../../../ChatParser/src/PublicChatMemberDTO.cpp; sourceTree = "<group>"; };
+		8E19A5BD1CCB45080008610B /* PublicChatMemberDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicChatMemberDTO.h; path = ../../../ChatParser/src/PublicChatMemberDTO.h; sourceTree = "<group>"; };
+		8E19A5BE1CCB45080008610B /* RoomDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RoomDTO.cpp; path = ../../../ChatParser/src/RoomDTO.cpp; sourceTree = "<group>"; };
+		8E19A5BF1CCB45080008610B /* RoomDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomDTO.h; path = ../../../ChatParser/src/RoomDTO.h; sourceTree = "<group>"; };
+		8E19A5C41CCB46120008610B /* DuplicateChecker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DuplicateChecker.cpp; path = ../../src/DuplicateChecker.cpp; sourceTree = "<group>"; };
+		8E19A5C51CCB46120008610B /* DuplicateChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DuplicateChecker.h; path = ../../src/DuplicateChecker.h; sourceTree = "<group>"; };
+		8E19A5C61CCB46120008610B /* FileSDKHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSDKHandler.h; path = ../../src/FileSDKHandler.h; sourceTree = "<group>"; };
+		8E19A5C71CCB46120008610B /* FriendInformation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FriendInformation.cpp; path = ../../src/FriendInformation.cpp; sourceTree = "<group>"; };
+		8E19A5C81CCB46120008610B /* FriendInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendInformation.h; path = ../../src/FriendInformation.h; sourceTree = "<group>"; };
+		8E19A5CB1CCB46120008610B /* PacketTimeId.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketTimeId.cpp; path = ../../src/PacketTimeId.cpp; sourceTree = "<group>"; };
+		8E19A5CC1CCB46120008610B /* PacketTimeId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketTimeId.h; path = ../../src/PacketTimeId.h; sourceTree = "<group>"; };
+		8E19A5CD1CCB46120008610B /* UnifiedProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UnifiedProcessor.cpp; path = ../../src/UnifiedProcessor.cpp; sourceTree = "<group>"; };
+		8E19A5CE1CCB46120008610B /* UnifiedProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnifiedProcessor.h; path = ../../src/UnifiedProcessor.h; sourceTree = "<group>"; };
+		8E2A569B1D053665003B5630 /* SDKMessageDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDKMessageDTO.cpp; path = ../../../ChatParser/src/SDKMessageDTO.cpp; sourceTree = "<group>"; };
+		8E2A569C1D053665003B5630 /* SDKMessageDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDKMessageDTO.h; path = ../../../ChatParser/src/SDKMessageDTO.h; sourceTree = "<group>"; };
+		8E334A161DD337D700468BFD /* worker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = worker.cpp; path = ../../../../../ipvcore/core/generic/worker.cpp; sourceTree = "<group>"; };
+		8E3919691DCF06E400586616 /* ConversationDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConversationDTO.cpp; path = ../../../ChatParser/src/ConversationDTO.cpp; sourceTree = "<group>"; };
+		8E39196A1DCF06E400586616 /* ConversationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConversationDTO.h; path = ../../../ChatParser/src/ConversationDTO.h; sourceTree = "<group>"; };
+		8E39196B1DCF06E400586616 /* ParserTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParserTypes.h; path = ../../../ChatParser/src/ParserTypes.h; sourceTree = "<group>"; };
+		8E3A80911E9A189000FF2B39 /* DataEncryption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataEncryption.cpp; path = ../../src/DataEncryption.cpp; sourceTree = "<group>"; };
+		8E3A80921E9A189000FF2B39 /* HashAlgorithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HashAlgorithm.cpp; path = ../../src/HashAlgorithm.cpp; sourceTree = "<group>"; };
+		8E3A80931E9A189000FF2B39 /* HashAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HashAlgorithm.h; path = ../../src/HashAlgorithm.h; sourceTree = "<group>"; };
+		8E3BEA0A1DE07FCB002715D0 /* IMConversationModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMConversationModel.mm; sourceTree = "<group>"; };
+		8E3BEA0B1DE07FCB002715D0 /* IMConversationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMConversationModel.h; sourceTree = "<group>"; };
+		8E53172C1E127AFE00BD39CE /* DataEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataEncryption.h; path = ../../src/DataEncryption.h; sourceTree = "<group>"; };
+		8E53172D1E127AFE00BD39CE /* sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sha1.cpp; path = ../../src/sha1.cpp; sourceTree = "<group>"; };
+		8E53172E1E127AFE00BD39CE /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = ../../src/sha1.h; sourceTree = "<group>"; };
+		8E5980861C143C270047F64F /* SeenPacketDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SeenPacketDTO.cpp; path = ../../../ChatParser/src/SeenPacketDTO.cpp; sourceTree = "<group>"; };
+		8E5980871C143C270047F64F /* SeenPacketDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeenPacketDTO.h; path = ../../../ChatParser/src/SeenPacketDTO.h; sourceTree = "<group>"; };
+		8E61011C1DFD404500084CF7 /* blocking_progress_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blocking_progress_handler.cpp; path = ../../../../../ipvcore/core/cloud/blocking_progress_handler.cpp; sourceTree = "<group>"; };
+		8E61011D1DFD404500084CF7 /* chunk_progress_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chunk_progress_handler.cpp; path = ../../../../../ipvcore/core/cloud/chunk_progress_handler.cpp; sourceTree = "<group>"; };
+		8E6101201DFD40A100084CF7 /* InternetChecker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InternetChecker.cpp; path = ../../src/InternetChecker.cpp; sourceTree = "<group>"; };
+		8E6101211DFD40A100084CF7 /* InternetChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InternetChecker.h; path = ../../src/InternetChecker.h; sourceTree = "<group>"; };
+		8E64C7D91E361E4C003912EC /* http_cloud_config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = http_cloud_config.cpp; path = ../../../../../ipvcore/core/generic/http_cloud_config.cpp; sourceTree = "<group>"; };
+		8E6BFEAC1C5E0200003F9C08 /* FriendMessageStatusDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendMessageStatusDTO.h; path = ../../../ChatParser/src/FriendMessageStatusDTO.h; sourceTree = "<group>"; };
+		8E6BFEAD1C5E0200003F9C08 /* GroupActivityDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupActivityDTO.h; path = ../../../ChatParser/src/GroupActivityDTO.h; sourceTree = "<group>"; };
+		8E6BFEAE1C5E0200003F9C08 /* GroupDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupDTO.h; path = ../../../ChatParser/src/GroupDTO.h; sourceTree = "<group>"; };
+		8E6BFEB21C5E020E003F9C08 /* FriendMessageStatusDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FriendMessageStatusDTO.cpp; path = ../../../ChatParser/src/FriendMessageStatusDTO.cpp; sourceTree = "<group>"; };
+		8E6BFEB31C5E020E003F9C08 /* GroupActivityDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GroupActivityDTO.cpp; path = ../../../ChatParser/src/GroupActivityDTO.cpp; sourceTree = "<group>"; };
+		8E6BFEB41C5E020E003F9C08 /* GroupDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GroupDTO.cpp; path = ../../../ChatParser/src/GroupDTO.cpp; sourceTree = "<group>"; };
+		8E73B6F11D0BE5E3002192E2 /* IMRoomModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMRoomModel.mm; sourceTree = "<group>"; };
+		8E73B6F31D0BE5F4002192E2 /* IMRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRoomModel.h; sourceTree = "<group>"; };
+		8E73B6F51D0C3520002192E2 /* IMPublicChatMemberModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMPublicChatMemberModel.mm; sourceTree = "<group>"; };
+		8E73B6F71D0C3533002192E2 /* IMPublicChatMemberModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMPublicChatMemberModel.h; sourceTree = "<group>"; };
+		8E86576C1D50B6090055F996 /* IMNetworkDataModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMNetworkDataModel.mm; sourceTree = "<group>"; };
+		8E86576E1D50B6B80055F996 /* IMNetworkDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNetworkDataModel.h; sourceTree = "<group>"; };
+		8E92D8941BF7562600F3C5A7 /* ByteArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ByteArray.cpp; path = ../../../ChatParser/src/ByteArray.cpp; sourceTree = "<group>"; };
+		8E92D8951BF7562600F3C5A7 /* ByteArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ByteArray.h; path = ../../../ChatParser/src/ByteArray.h; sourceTree = "<group>"; };
+		8E92D8961BF7562600F3C5A7 /* ChatParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChatParser.cpp; path = ../../../ChatParser/src/ChatParser.cpp; sourceTree = "<group>"; };
+		8E92D8971BF7562600F3C5A7 /* ChatParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatParser.h; path = ../../../ChatParser/src/ChatParser.h; sourceTree = "<group>"; };
+		8E92D8981BF7562600F3C5A7 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = global.h; path = ../../../ChatParser/src/global.h; sourceTree = "<group>"; };
+		8E92D8991BF7562600F3C5A7 /* MemberDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemberDTO.cpp; path = ../../../ChatParser/src/MemberDTO.cpp; sourceTree = "<group>"; };
+		8E92D89A1BF7562600F3C5A7 /* MemberDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemberDTO.h; path = ../../../ChatParser/src/MemberDTO.h; sourceTree = "<group>"; };
+		8E92D89B1BF7562600F3C5A7 /* PacketDTO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketDTO.cpp; path = ../../../ChatParser/src/PacketDTO.cpp; sourceTree = "<group>"; };
+		8E92D89C1BF7562600F3C5A7 /* PacketDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketDTO.h; path = ../../../ChatParser/src/PacketDTO.h; sourceTree = "<group>"; };
+		8E92D89D1BF7562600F3C5A7 /* PacketTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketTemplate.cpp; path = ../../../ChatParser/src/PacketTemplate.cpp; sourceTree = "<group>"; };
+		8E92D89E1BF7562600F3C5A7 /* PacketTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketTemplate.h; path = ../../../ChatParser/src/PacketTemplate.h; sourceTree = "<group>"; };
+		8E92D8AB1BF7564700F3C5A7 /* Chat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chat.cpp; path = ../../src/Chat.cpp; sourceTree = "<group>"; };
+		8E92D8AC1BF7564700F3C5A7 /* Chat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chat.h; path = ../../src/Chat.h; sourceTree = "<group>"; };
+		8E92D8AD1BF7564700F3C5A7 /* KeepaliveProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KeepaliveProcessor.cpp; path = ../../src/KeepaliveProcessor.cpp; sourceTree = "<group>"; };
+		8E92D8AE1BF7564700F3C5A7 /* KeepaliveProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeepaliveProcessor.h; path = ../../src/KeepaliveProcessor.h; sourceTree = "<group>"; };
+		8E92D8AF1BF7564700F3C5A7 /* PacketReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketReceiver.cpp; path = ../../src/PacketReceiver.cpp; sourceTree = "<group>"; };
+		8E92D8B01BF7564700F3C5A7 /* Socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Socket.cpp; path = ../../src/Socket.cpp; sourceTree = "<group>"; };
+		8E92D8B11BF7564700F3C5A7 /* ChatPacketBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChatPacketBuilder.cpp; path = ../../src/ChatPacketBuilder.cpp; sourceTree = "<group>"; };
+		8E92D8B21BF7564700F3C5A7 /* IChatEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IChatEventHandler.h; path = ../../src/IChatEventHandler.h; sourceTree = "<group>"; };
+		8E92D8B31BF7564700F3C5A7 /* ApiStatus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApiStatus.cpp; path = ../../src/ApiStatus.cpp; sourceTree = "<group>"; };
+		8E92D8B41BF7564700F3C5A7 /* ApiStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiStatus.h; path = ../../src/ApiStatus.h; sourceTree = "<group>"; };
+		8E92D8B51BF7564700F3C5A7 /* ChatEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChatEvent.cpp; path = ../../src/ChatEvent.cpp; sourceTree = "<group>"; };
+		8E92D8B61BF7564700F3C5A7 /* ChatEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatEvent.h; path = ../../src/ChatEvent.h; sourceTree = "<group>"; };
+		8E92D8B71BF7564700F3C5A7 /* ChatPacketBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatPacketBuilder.h; path = ../../src/ChatPacketBuilder.h; sourceTree = "<group>"; };
+		8E92D8B81BF7564700F3C5A7 /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Connection.cpp; path = ../../src/Connection.cpp; sourceTree = "<group>"; };
+		8E92D8B91BF7564700F3C5A7 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = ../../src/Connection.h; sourceTree = "<group>"; };
+		8E92D8BA1BF7564700F3C5A7 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = ../../src/Event.cpp; sourceTree = "<group>"; };
+		8E92D8BB1BF7564700F3C5A7 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../../src/Event.h; sourceTree = "<group>"; };
+		8E92D8BC1BF7564700F3C5A7 /* EventProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventProcessor.cpp; path = ../../src/EventProcessor.cpp; sourceTree = "<group>"; };
+		8E92D8BD1BF7564700F3C5A7 /* EventProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventProcessor.h; path = ../../src/EventProcessor.h; sourceTree = "<group>"; };
+		8E92D8BF1BF7564700F3C5A7 /* IChatEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IChatEventHandler.cpp; path = ../../src/IChatEventHandler.cpp; sourceTree = "<group>"; };
+		8E92D8C01BF7564700F3C5A7 /* IEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEventHandler.h; path = ../../src/IEventHandler.h; sourceTree = "<group>"; };
+		8E92D8C11BF7564700F3C5A7 /* KeepalivePacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KeepalivePacket.cpp; path = ../../src/KeepalivePacket.cpp; sourceTree = "<group>"; };
+		8E92D8C21BF7564700F3C5A7 /* KeepalivePacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeepalivePacket.h; path = ../../src/KeepalivePacket.h; sourceTree = "<group>"; };
+		8E92D8C51BF7564700F3C5A7 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Logger.cpp; path = ../../src/Logger.cpp; sourceTree = "<group>"; };
+		8E92D8C61BF7564700F3C5A7 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = ../../src/Logger.h; sourceTree = "<group>"; };
+		8E92D8C71BF7564700F3C5A7 /* PacketProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PacketProcessor.cpp; path = ../../src/PacketProcessor.cpp; sourceTree = "<group>"; };
+		8E92D8C81BF7564700F3C5A7 /* PacketProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketProcessor.h; path = ../../src/PacketProcessor.h; sourceTree = "<group>"; };
+		8E92D8C91BF7564700F3C5A7 /* PacketReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketReceiver.h; path = ../../src/PacketReceiver.h; sourceTree = "<group>"; };
+		8E92D8CB1BF7564700F3C5A7 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Processor.h; path = ../../src/Processor.h; sourceTree = "<group>"; };
+		8E92D8CD1BF7564700F3C5A7 /* QueueElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueueElement.h; path = ../../src/QueueElement.h; sourceTree = "<group>"; };
+		8E92D8CE1BF7564700F3C5A7 /* ResendProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResendProcessor.cpp; path = ../../src/ResendProcessor.cpp; sourceTree = "<group>"; };
+		8E92D8CF1BF7564700F3C5A7 /* ResendProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResendProcessor.h; path = ../../src/ResendProcessor.h; sourceTree = "<group>"; };
+		8E92D8D01BF7564700F3C5A7 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = ../../src/ResourceManager.cpp; sourceTree = "<group>"; };
+		8E92D8D11BF7564700F3C5A7 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = ../../src/ResourceManager.h; sourceTree = "<group>"; };
+		8E92D8D21BF7564700F3C5A7 /* Scheduler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scheduler.cpp; path = ../../src/Scheduler.cpp; sourceTree = "<group>"; };
+		8E92D8D31BF7564700F3C5A7 /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scheduler.h; path = ../../src/Scheduler.h; sourceTree = "<group>"; };
+		8E92D8D61BF7564700F3C5A7 /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Socket.h; path = ../../src/Socket.h; sourceTree = "<group>"; };
+		8E92D8D71BF7564700F3C5A7 /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Thread.cpp; path = ../../src/Thread.cpp; sourceTree = "<group>"; };
+		8E92D8D81BF7564700F3C5A7 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thread.h; path = ../../src/Thread.h; sourceTree = "<group>"; };
+		8E92D8D91BF7564700F3C5A7 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Types.h; path = ../../src/Types.h; sourceTree = "<group>"; };
+		8E92D90E1BF7571F00F3C5A7 /* IMGroupMemberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGroupMemberModel.h; sourceTree = "<group>"; };
+		8E92D90F1BF7571F00F3C5A7 /* IMGroupMemberModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMGroupMemberModel.mm; sourceTree = "<group>"; };
+		8E92D9101BF7571F00F3C5A7 /* IMAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAdapter.h; sourceTree = "<group>"; };
+		8E92D9111BF7571F00F3C5A7 /* IMAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMAdapter.mm; sourceTree = "<group>"; };
+		8E92D9121BF7571F00F3C5A7 /* IMApiStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMApiStatus.h; sourceTree = "<group>"; };
+		8E92D9131BF7571F00F3C5A7 /* IMApiStatus.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMApiStatus.mm; sourceTree = "<group>"; };
+		8E92D9141BF7571F00F3C5A7 /* IMHandlerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMHandlerAdapter.h; sourceTree = "<group>"; };
+		8E92D9151BF7571F00F3C5A7 /* IMHandlerAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMHandlerAdapter.mm; sourceTree = "<group>"; };
+		8E92D9161BF7571F00F3C5A7 /* IMHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMHandlerDelegate.h; sourceTree = "<group>"; };
+		8E92D9171BF7571F00F3C5A7 /* IMHandlerDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMHandlerDelegate.mm; sourceTree = "<group>"; };
+		8E92D9181BF7571F00F3C5A7 /* IMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMManager.h; sourceTree = "<group>"; };
+		8E92D9191BF7571F00F3C5A7 /* IMManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMManager.mm; sourceTree = "<group>"; };
+		8E92D91A1BF7571F00F3C5A7 /* IMReceivedMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMReceivedMessageDelegate.h; sourceTree = "<group>"; };
+		8EABC8E71D3614E8007BD673 /* GroupInformation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GroupInformation.cpp; path = ../../src/GroupInformation.cpp; sourceTree = "<group>"; };
+		8EABC8E81D3614E8007BD673 /* GroupInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupInformation.h; path = ../../src/GroupInformation.h; sourceTree = "<group>"; };
+		8EB70ED61D0D40FC009ADE7F /* IMFriendInformationModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMFriendInformationModel.mm; sourceTree = "<group>"; };
+		8EB70ED81D0D410D009ADE7F /* IMFriendInformationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMFriendInformationModel.h; sourceTree = "<group>"; };
+		8EB70EDA1D0D4171009ADE7F /* IMGroupInformationModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMGroupInformationModel.mm; sourceTree = "<group>"; };
+		8EB70EDC1D0D417C009ADE7F /* IMGroupInformationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGroupInformationModel.h; sourceTree = "<group>"; };
+		8EC3B7A91C60A57C00EB1FD4 /* IMMessageStatusModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMMessageStatusModel.mm; sourceTree = "<group>"; };
+		8EC3B7AA1C60A57C00EB1FD4 /* IMMessageStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMessageStatusModel.h; sourceTree = "<group>"; };
+		8EC3B7AD1C60A73B00EB1FD4 /* IMGroupModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMGroupModel.mm; sourceTree = "<group>"; };
+		8EC3B7AE1C60A73B00EB1FD4 /* IMGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGroupModel.h; sourceTree = "<group>"; };
+		8EC3B7B51C60ABC000EB1FD4 /* IMGroupActivityModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMGroupActivityModel.mm; sourceTree = "<group>"; };
+		8EC3B7B61C60ABC000EB1FD4 /* IMGroupActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGroupActivityModel.h; sourceTree = "<group>"; };
+		8EC635DD1D0804E40098C25C /* IMMessageModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IMMessageModel.mm; sourceTree = "<group>"; };
+		8EC635DF1D0804F80098C25C /* IMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMessageModel.h; sourceTree = "<group>"; };
+		8EDD075E1D4F5EC10006DBB3 /* DataCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataCounter.cpp; path = ../../../ChatParser/src/DataCounter.cpp; sourceTree = "<group>"; };
+		8EDD075F1D4F5EC10006DBB3 /* DataCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCounter.h; path = ../../../ChatParser/src/DataCounter.h; sourceTree = "<group>"; };
+		8EE409721D3E319700650C89 /* IOSLogger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IOSLogger.mm; path = ../../src/IOSLogger.mm; sourceTree = "<group>"; };
+		8EE409741D3E31BD00650C89 /* IOSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSLogger.h; path = ../../src/IOSLogger.h; sourceTree = "<group>"; };
+		8EFC58D61E07C385001FD52B /* encode_decode_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = encode_decode_util.cpp; path = ../../../../../ipvcore/core/cloud/encode_decode_util.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77A277B21BF74F4E0051DB07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC51A131DC1FE4400F6488D /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DC519D81DC1F28100F6488D /* ipvcore */ = {
+			isa = PBXGroup;
+			children = (
+				0DC519E61DC1F2E700F6488D /* generic */,
+				0DC519E51DC1F2DD00F6488D /* third_party */,
+				0DC519DA1DC1F2A200F6488D /* http */,
+				0DC519D91DC1F28900F6488D /* cloud */,
+			);
+			name = ipvcore;
+			sourceTree = "<group>";
+		};
+		0DC519D91DC1F28900F6488D /* cloud */ = {
+			isa = PBXGroup;
+			children = (
+				8EFC58D61E07C385001FD52B /* encode_decode_util.cpp */,
+				8E61011C1DFD404500084CF7 /* blocking_progress_handler.cpp */,
+				8E61011D1DFD404500084CF7 /* chunk_progress_handler.cpp */,
+				0DC519C61DC1F27C00F6488D /* blocking_downloader.cpp */,
+				0DC519C71DC1F27C00F6488D /* blocking_uploader.cpp */,
+				0DC519C81DC1F27C00F6488D /* chunking_downloader.cpp */,
+				0DC519C91DC1F27C00F6488D /* chunking_uploader.cpp */,
+				0DC519CA1DC1F27C00F6488D /* manager.cpp */,
+				0DC519CB1DC1F27C00F6488D /* non_blocking_downloader.cpp */,
+				0DC519CC1DC1F27C00F6488D /* non_blocking_uploader.cpp */,
+				0DC519CD1DC1F27C00F6488D /* response.cpp */,
+				0DC519CE1DC1F27C00F6488D /* utils.cpp */,
+			);
+			name = cloud;
+			sourceTree = "<group>";
+		};
+		0DC519DA1DC1F2A200F6488D /* http */ = {
+			isa = PBXGroup;
+			children = (
+				0DC519DB1DC1F2C600F6488D /* curl_handler.cpp */,
+				0DC519DC1DC1F2C600F6488D /* manager.cpp */,
+				0DC519DD1DC1F2C600F6488D /* request.cpp */,
+				0DC519DE1DC1F2C600F6488D /* response.cpp */,
+				0DC519DF1DC1F2C600F6488D /* utils.cpp */,
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
+		0DC519E51DC1F2DD00F6488D /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				0DC519E71DC1F30700F6488D /* json11.cpp */,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
+		0DC519E61DC1F2E700F6488D /* generic */ = {
+			isa = PBXGroup;
+			children = (
+				8E64C7D91E361E4C003912EC /* http_cloud_config.cpp */,
+				8E334A161DD337D700468BFD /* worker.cpp */,
+				0DC519E91DC1F32500F6488D /* byte_parser.cpp */,
+				0DC519EA1DC1F32500F6488D /* file_system.cpp */,
+				0DC519EB1DC1F32500F6488D /* types.cpp */,
+				0DC519EC1DC1F32500F6488D /* utils.cpp */,
+			);
+			name = generic;
+			sourceTree = "<group>";
+		};
+		77A277AC1BF74F4E0051DB07 = {
+			isa = PBXGroup;
+			children = (
+				0DC51A121DC1FE4400F6488D /* libcurl.a */,
+				0DC519D81DC1F28100F6488D /* ipvcore */,
+				8E92D8AA1BF7562B00F3C5A7 /* ChatParser */,
+				8E92D9091BF7564F00F3C5A7 /* Chat */,
+				77A277B71BF74F4E0051DB07 /* IMSDK */,
+				77A277B61BF74F4E0051DB07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77A277B61BF74F4E0051DB07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77A277B51BF74F4E0051DB07 /* libIMSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77A277B71BF74F4E0051DB07 /* IMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8E92D9101BF7571F00F3C5A7 /* IMAdapter.h */,
+				8E92D9111BF7571F00F3C5A7 /* IMAdapter.mm */,
+				8E92D9121BF7571F00F3C5A7 /* IMApiStatus.h */,
+				8E92D9131BF7571F00F3C5A7 /* IMApiStatus.mm */,
+				8E3BEA0B1DE07FCB002715D0 /* IMConversationModel.h */,
+				8E3BEA0A1DE07FCB002715D0 /* IMConversationModel.mm */,
+				8EB70ED81D0D410D009ADE7F /* IMFriendInformationModel.h */,
+				8EB70ED61D0D40FC009ADE7F /* IMFriendInformationModel.mm */,
+				8EC3B7B61C60ABC000EB1FD4 /* IMGroupActivityModel.h */,
+				8EC3B7B51C60ABC000EB1FD4 /* IMGroupActivityModel.mm */,
+				8EB70EDC1D0D417C009ADE7F /* IMGroupInformationModel.h */,
+				8EB70EDA1D0D4171009ADE7F /* IMGroupInformationModel.mm */,
+				8E92D90E1BF7571F00F3C5A7 /* IMGroupMemberModel.h */,
+				8E92D90F1BF7571F00F3C5A7 /* IMGroupMemberModel.mm */,
+				8EC3B7AE1C60A73B00EB1FD4 /* IMGroupModel.h */,
+				8EC3B7AD1C60A73B00EB1FD4 /* IMGroupModel.mm */,
+				8E92D9141BF7571F00F3C5A7 /* IMHandlerAdapter.h */,
+				8E92D9151BF7571F00F3C5A7 /* IMHandlerAdapter.mm */,
+				8E92D9161BF7571F00F3C5A7 /* IMHandlerDelegate.h */,
+				8E92D9171BF7571F00F3C5A7 /* IMHandlerDelegate.mm */,
+				8E92D9181BF7571F00F3C5A7 /* IMManager.h */,
+				8E92D9191BF7571F00F3C5A7 /* IMManager.mm */,
+				8EC635DF1D0804F80098C25C /* IMMessageModel.h */,
+				8EC635DD1D0804E40098C25C /* IMMessageModel.mm */,
+				8EC3B7AA1C60A57C00EB1FD4 /* IMMessageStatusModel.h */,
+				8EC3B7A91C60A57C00EB1FD4 /* IMMessageStatusModel.mm */,
+				8E86576E1D50B6B80055F996 /* IMNetworkDataModel.h */,
+				8E86576C1D50B6090055F996 /* IMNetworkDataModel.mm */,
+				8E059A711CCC7DD500F3B915 /* IMPacketTimeId.h */,
+				8E059A6F1CCC7DBF00F3B915 /* IMPacketTimeId.mm */,
+				8E73B6F71D0C3533002192E2 /* IMPublicChatMemberModel.h */,
+				8E73B6F51D0C3520002192E2 /* IMPublicChatMemberModel.mm */,
+				8E92D91A1BF7571F00F3C5A7 /* IMReceivedMessageDelegate.h */,
+				8E73B6F31D0BE5F4002192E2 /* IMRoomModel.h */,
+				8E73B6F11D0BE5E3002192E2 /* IMRoomModel.mm */,
+				77A277B81BF74F4E0051DB07 /* IMSDK.h */,
+				77A277BA1BF74F4E0051DB07 /* IMSDK.mm */,
+				8E0BB5FA1C61C25000A9BB4E /* IMSDKTypes.h */,
+			);
+			path = IMSDK;
+			sourceTree = "<group>";
+		};
+		8E92D8AA1BF7562B00F3C5A7 /* ChatParser */ = {
+			isa = PBXGroup;
+			children = (
+				8E92D90C1BF7569C00F3C5A7 /* Header */,
+				8E92D90D1BF756AB00F3C5A7 /* Sources */,
+			);
+			name = ChatParser;
+			sourceTree = "<group>";
+		};
+		8E92D9091BF7564F00F3C5A7 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8E92D90B1BF7568D00F3C5A7 /* Header */,
+				8E92D90A1BF7567E00F3C5A7 /* Sources */,
+				8EE409741D3E31BD00650C89 /* IOSLogger.h */,
+				8EE409721D3E319700650C89 /* IOSLogger.mm */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		8E92D90A1BF7567E00F3C5A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E92D8B31BF7564700F3C5A7 /* ApiStatus.cpp */,
+				8E92D8AB1BF7564700F3C5A7 /* Chat.cpp */,
+				8E92D8B51BF7564700F3C5A7 /* ChatEvent.cpp */,
+				8E92D8B11BF7564700F3C5A7 /* ChatPacketBuilder.cpp */,
+				0DC51A071DC1FB4D00F6488D /* CloudNotificationHandler.cpp */,
+				8E92D8B81BF7564700F3C5A7 /* Connection.cpp */,
+				8E3A80911E9A189000FF2B39 /* DataEncryption.cpp */,
+				8E19A5C41CCB46120008610B /* DuplicateChecker.cpp */,
+				8E92D8BA1BF7564700F3C5A7 /* Event.cpp */,
+				8E92D8BC1BF7564700F3C5A7 /* EventProcessor.cpp */,
+				8E19A5C71CCB46120008610B /* FriendInformation.cpp */,
+				8EABC8E71D3614E8007BD673 /* GroupInformation.cpp */,
+				8E3A80921E9A189000FF2B39 /* HashAlgorithm.cpp */,
+				8E92D8BF1BF7564700F3C5A7 /* IChatEventHandler.cpp */,
+				8E6101201DFD40A100084CF7 /* InternetChecker.cpp */,
+				8E92D8C11BF7564700F3C5A7 /* KeepalivePacket.cpp */,
+				8E92D8AD1BF7564700F3C5A7 /* KeepaliveProcessor.cpp */,
+				8E92D8C51BF7564700F3C5A7 /* Logger.cpp */,
+				8E92D8C71BF7564700F3C5A7 /* PacketProcessor.cpp */,
+				8E92D8AF1BF7564700F3C5A7 /* PacketReceiver.cpp */,
+				8E19A5CB1CCB46120008610B /* PacketTimeId.cpp */,
+				8E92D8CE1BF7564700F3C5A7 /* ResendProcessor.cpp */,
+				8E92D8D01BF7564700F3C5A7 /* ResourceManager.cpp */,
+				8E92D8D21BF7564700F3C5A7 /* Scheduler.cpp */,
+				8E53172D1E127AFE00BD39CE /* sha1.cpp */,
+				8E92D8B01BF7564700F3C5A7 /* Socket.cpp */,
+				8E92D8D71BF7564700F3C5A7 /* Thread.cpp */,
+				8E19A5CD1CCB46120008610B /* UnifiedProcessor.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		8E92D90B1BF7568D00F3C5A7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8E92D8B41BF7564700F3C5A7 /* ApiStatus.h */,
+				8E92D8AC1BF7564700F3C5A7 /* Chat.h */,
+				8E92D8B61BF7564700F3C5A7 /* ChatEvent.h */,
+				8E92D8B71BF7564700F3C5A7 /* ChatPacketBuilder.h */,
+				0DC51A091DC1FB5700F6488D /* CloudNotificationHandler.h */,
+				8E92D8B91BF7564700F3C5A7 /* Connection.h */,
+				8E53172C1E127AFE00BD39CE /* DataEncryption.h */,
+				8E19A5C51CCB46120008610B /* DuplicateChecker.h */,
+				8E92D8BB1BF7564700F3C5A7 /* Event.h */,
+				8E92D8BD1BF7564700F3C5A7 /* EventProcessor.h */,
+				8E19A5C61CCB46120008610B /* FileSDKHandler.h */,
+				8E19A5C81CCB46120008610B /* FriendInformation.h */,
+				8EABC8E81D3614E8007BD673 /* GroupInformation.h */,
+				8E3A80931E9A189000FF2B39 /* HashAlgorithm.h */,
+				8E92D8B21BF7564700F3C5A7 /* IChatEventHandler.h */,
+				8E92D8C01BF7564700F3C5A7 /* IEventHandler.h */,
+				8E6101211DFD40A100084CF7 /* InternetChecker.h */,
+				8E92D8C21BF7564700F3C5A7 /* KeepalivePacket.h */,
+				8E92D8AE1BF7564700F3C5A7 /* KeepaliveProcessor.h */,
+				8E92D8C61BF7564700F3C5A7 /* Logger.h */,
+				8E92D8C81BF7564700F3C5A7 /* PacketProcessor.h */,
+				8E92D8C91BF7564700F3C5A7 /* PacketReceiver.h */,
+				8E19A5CC1CCB46120008610B /* PacketTimeId.h */,
+				8E92D8CB1BF7564700F3C5A7 /* Processor.h */,
+				8E92D8CD1BF7564700F3C5A7 /* QueueElement.h */,
+				8E92D8CF1BF7564700F3C5A7 /* ResendProcessor.h */,
+				8E92D8D11BF7564700F3C5A7 /* ResourceManager.h */,
+				8E92D8D31BF7564700F3C5A7 /* Scheduler.h */,
+				8E53172E1E127AFE00BD39CE /* sha1.h */,
+				8E92D8D61BF7564700F3C5A7 /* Socket.h */,
+				8E92D8D81BF7564700F3C5A7 /* Thread.h */,
+				8E92D8D91BF7564700F3C5A7 /* Types.h */,
+				8E19A5CE1CCB46120008610B /* UnifiedProcessor.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		8E92D90C1BF7569C00F3C5A7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8E39196A1DCF06E400586616 /* ConversationDTO.h */,
+				8E39196B1DCF06E400586616 /* ParserTypes.h */,
+				8E92D8951BF7562600F3C5A7 /* ByteArray.h */,
+				8E92D8971BF7562600F3C5A7 /* ChatParser.h */,
+				8EDD075F1D4F5EC10006DBB3 /* DataCounter.h */,
+				8E6BFEAC1C5E0200003F9C08 /* FriendMessageStatusDTO.h */,
+				8E92D8981BF7562600F3C5A7 /* global.h */,
+				8E6BFEAD1C5E0200003F9C08 /* GroupActivityDTO.h */,
+				8E6BFEAE1C5E0200003F9C08 /* GroupDTO.h */,
+				8E92D89A1BF7562600F3C5A7 /* MemberDTO.h */,
+				8E92D89C1BF7562600F3C5A7 /* PacketDTO.h */,
+				8E92D89E1BF7562600F3C5A7 /* PacketTemplate.h */,
+				8E19A5BD1CCB45080008610B /* PublicChatMemberDTO.h */,
+				8E19A5BF1CCB45080008610B /* RoomDTO.h */,
+				8E2A569C1D053665003B5630 /* SDKMessageDTO.h */,
+				8E5980871C143C270047F64F /* SeenPacketDTO.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		8E92D90D1BF756AB00F3C5A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E3919691DCF06E400586616 /* ConversationDTO.cpp */,
+				8E92D8941BF7562600F3C5A7 /* ByteArray.cpp */,
+				8E92D8961BF7562600F3C5A7 /* ChatParser.cpp */,
+				8EDD075E1D4F5EC10006DBB3 /* DataCounter.cpp */,
+				8E6BFEB21C5E020E003F9C08 /* FriendMessageStatusDTO.cpp */,
+				8E6BFEB31C5E020E003F9C08 /* GroupActivityDTO.cpp */,
+				8E6BFEB41C5E020E003F9C08 /* GroupDTO.cpp */,
+				8E92D8991BF7562600F3C5A7 /* MemberDTO.cpp */,
+				8E92D89B1BF7562600F3C5A7 /* PacketDTO.cpp */,
+				8E92D89D1BF7562600F3C5A7 /* PacketTemplate.cpp */,
+				8E19A5BC1CCB45080008610B /* PublicChatMemberDTO.cpp */,
+				8E19A5BE1CCB45080008610B /* RoomDTO.cpp */,
+				8E2A569B1D053665003B5630 /* SDKMessageDTO.cpp */,
+				8E5980861C143C270047F64F /* SeenPacketDTO.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E92D8921BF754F200F3C5A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3BEA0D1DE07FCB002715D0 /* IMConversationModel.h in Headers */,
+				8E86576F1D50B6B80055F996 /* IMNetworkDataModel.h in Headers */,
+				8E22B0A71D1A57060095C952 /* IMPublicChatMemberModel.h in Headers */,
+				8EC635E01D0804F80098C25C /* IMMessageModel.h in Headers */,
+				8EC3B7AC1C60A57C00EB1FD4 /* IMMessageStatusModel.h in Headers */,
+				8E92D91F1BF7571F00F3C5A7 /* IMApiStatus.h in Headers */,
+				8EDD07611D4F5EC10006DBB3 /* DataCounter.h in Headers */,
+				8EC3B7B01C60A73B00EB1FD4 /* IMGroupModel.h in Headers */,
+				8E059A721CCC7DD500F3B915 /* IMPacketTimeId.h in Headers */,
+				8E0BB5FB1C61C25000A9BB4E /* IMSDKTypes.h in Headers */,
+				8EE409751D3E31BD00650C89 /* IOSLogger.h in Headers */,
+				8EC3B7B81C60ABC000EB1FD4 /* IMGroupActivityModel.h in Headers */,
+				8E92D9231BF7571F00F3C5A7 /* IMHandlerDelegate.h in Headers */,
+				8EB70ED91D0D410D009ADE7F /* IMFriendInformationModel.h in Headers */,
+				8EB70EDD1D0D417C009ADE7F /* IMGroupInformationModel.h in Headers */,
+				8E73B6F41D0BE5F4002192E2 /* IMRoomModel.h in Headers */,
+				8E92D9251BF7571F00F3C5A7 /* IMManager.h in Headers */,
+				8E92D9271BF7571F00F3C5A7 /* IMReceivedMessageDelegate.h in Headers */,
+				8E19A5C11CCB45080008610B /* PublicChatMemberDTO.h in Headers */,
+				8E92D91B1BF7571F00F3C5A7 /* IMGroupMemberModel.h in Headers */,
+				8E92D8A21BF7562600F3C5A7 /* ChatParser.h in Headers */,
+				8E92D8931BF754FB00F3C5A7 /* IMSDK.h in Headers */,
+				8E6BFEAF1C5E0200003F9C08 /* FriendMessageStatusDTO.h in Headers */,
+				8E5980891C143C270047F64F /* SeenPacketDTO.h in Headers */,
+				8E39196D1DCF06E400586616 /* ConversationDTO.h in Headers */,
+				8E92D8FA1BF7564700F3C5A7 /* Processor.h in Headers */,
+				8E92D8DD1BF7564700F3C5A7 /* KeepaliveProcessor.h in Headers */,
+				8E92D8A01BF7562600F3C5A7 /* ByteArray.h in Headers */,
+				0DC51A0A1DC1FB5700F6488D /* CloudNotificationHandler.h in Headers */,
+				8E92D8F71BF7564700F3C5A7 /* PacketProcessor.h in Headers */,
+				8E19A5D11CCB46120008610B /* FileSDKHandler.h in Headers */,
+				8E92D8FE1BF7564700F3C5A7 /* ResendProcessor.h in Headers */,
+				8E2A569E1D053665003B5630 /* SDKMessageDTO.h in Headers */,
+				8E92D9001BF7564700F3C5A7 /* ResourceManager.h in Headers */,
+				8E3A80961E9A189000FF2B39 /* HashAlgorithm.h in Headers */,
+				8E92D8E51BF7564700F3C5A7 /* ChatEvent.h in Headers */,
+				8E92D8E11BF7564700F3C5A7 /* IChatEventHandler.h in Headers */,
+				8E92D8F81BF7564700F3C5A7 /* PacketReceiver.h in Headers */,
+				8E92D8A51BF7562600F3C5A7 /* MemberDTO.h in Headers */,
+				8E92D8DB1BF7564700F3C5A7 /* Chat.h in Headers */,
+				8E39196E1DCF06E400586616 /* ParserTypes.h in Headers */,
+				8E19A5D31CCB46120008610B /* FriendInformation.h in Headers */,
+				8E19A5C31CCB45080008610B /* RoomDTO.h in Headers */,
+				8E19A5D71CCB46120008610B /* PacketTimeId.h in Headers */,
+				8E92D8EC1BF7564700F3C5A7 /* EventProcessor.h in Headers */,
+				8E92D8A91BF7562600F3C5A7 /* PacketTemplate.h in Headers */,
+				8E92D8E31BF7564700F3C5A7 /* ApiStatus.h in Headers */,
+				8E92D9081BF7564700F3C5A7 /* Types.h in Headers */,
+				8E6BFEB01C5E0200003F9C08 /* GroupActivityDTO.h in Headers */,
+				8E92D8F11BF7564700F3C5A7 /* KeepalivePacket.h in Headers */,
+				8E92D8E61BF7564700F3C5A7 /* ChatPacketBuilder.h in Headers */,
+				8E92D9021BF7564700F3C5A7 /* Scheduler.h in Headers */,
+				8E92D9071BF7564700F3C5A7 /* Thread.h in Headers */,
+				8E19A5D01CCB46120008610B /* DuplicateChecker.h in Headers */,
+				8E53172F1E127AFE00BD39CE /* DataEncryption.h in Headers */,
+				8E6101231DFD40A100084CF7 /* InternetChecker.h in Headers */,
+				8E92D91D1BF7571F00F3C5A7 /* IMAdapter.h in Headers */,
+				8E92D8F51BF7564700F3C5A7 /* Logger.h in Headers */,
+				8E92D8FC1BF7564700F3C5A7 /* QueueElement.h in Headers */,
+				8EABC8EA1D3614E8007BD673 /* GroupInformation.h in Headers */,
+				8E92D8A71BF7562600F3C5A7 /* PacketDTO.h in Headers */,
+				8E92D9051BF7564700F3C5A7 /* Socket.h in Headers */,
+				8E92D9211BF7571F00F3C5A7 /* IMHandlerAdapter.h in Headers */,
+				8E92D8EF1BF7564700F3C5A7 /* IEventHandler.h in Headers */,
+				8E19A5D91CCB46120008610B /* UnifiedProcessor.h in Headers */,
+				8E6BFEB11C5E0200003F9C08 /* GroupDTO.h in Headers */,
+				8E92D8EA1BF7564700F3C5A7 /* Event.h in Headers */,
+				8E92D8E81BF7564700F3C5A7 /* Connection.h in Headers */,
+				8E5317311E127AFE00BD39CE /* sha1.h in Headers */,
+				8E92D8A31BF7562600F3C5A7 /* global.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		77A277B41BF74F4E0051DB07 /* IMSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A277C91BF74F4E0051DB07 /* Build configuration list for PBXNativeTarget "IMSDK" */;
+			buildPhases = (
+				77A277B11BF74F4E0051DB07 /* Sources */,
+				77A277B21BF74F4E0051DB07 /* Frameworks */,
+				77A277B31BF74F4E0051DB07 /* CopyFiles */,
+				77A277D31BF74FF30051DB07 /* ShellScript */,
+				8E92D8921BF754F200F3C5A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMSDK;
+			productName = IMSDK;
+			productReference = 77A277B51BF74F4E0051DB07 /* libIMSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77A277AD1BF74F4E0051DB07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Sumon;
+				TargetAttributes = {
+					77A277B41BF74F4E0051DB07 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					77A277CF1BF74F8C0051DB07 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 77A277B01BF74F4E0051DB07 /* Build configuration list for PBXProject "IMSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 77A277AC1BF74F4E0051DB07;
+			productRefGroup = 77A277B61BF74F4E0051DB07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77A277B41BF74F4E0051DB07 /* IMSDK */,
+				77A277CF1BF74F8C0051DB07 /* IMSDKFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77A277D31BF74FF30051DB07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"";
+		};
+		77A277D41BF7500C0051DB07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=\"IMSDK\"\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77A277B11BF74F4E0051DB07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3A80941E9A189000FF2B39 /* DataEncryption.cpp in Sources */,
+				0DC519ED1DC1F32500F6488D /* byte_parser.cpp in Sources */,
+				0DC519EE1DC1F32500F6488D /* file_system.cpp in Sources */,
+				8E6101221DFD40A100084CF7 /* InternetChecker.cpp in Sources */,
+				0DC519EF1DC1F32500F6488D /* types.cpp in Sources */,
+				0DC519F01DC1F32500F6488D /* utils.cpp in Sources */,
+				0DC519E81DC1F30700F6488D /* json11.cpp in Sources */,
+				0DC519E01DC1F2C600F6488D /* curl_handler.cpp in Sources */,
+				0DC519E11DC1F2C600F6488D /* manager.cpp in Sources */,
+				0DC519E21DC1F2C600F6488D /* request.cpp in Sources */,
+				8E61011E1DFD404500084CF7 /* blocking_progress_handler.cpp in Sources */,
+				0DC519E31DC1F2C600F6488D /* response.cpp in Sources */,
+				0DC519E41DC1F2C600F6488D /* utils.cpp in Sources */,
+				0DC519CF1DC1F27C00F6488D /* blocking_downloader.cpp in Sources */,
+				0DC519D01DC1F27C00F6488D /* blocking_uploader.cpp in Sources */,
+				8EFC58D71E07C385001FD52B /* encode_decode_util.cpp in Sources */,
+				0DC519D11DC1F27C00F6488D /* chunking_downloader.cpp in Sources */,
+				0DC519D21DC1F27C00F6488D /* chunking_uploader.cpp in Sources */,
+				8E3BEA0C1DE07FCB002715D0 /* IMConversationModel.mm in Sources */,
+				0DC519D31DC1F27C00F6488D /* manager.cpp in Sources */,
+				0DC519D41DC1F27C00F6488D /* non_blocking_downloader.cpp in Sources */,
+				0DC519D51DC1F27C00F6488D /* non_blocking_uploader.cpp in Sources */,
+				0DC519D61DC1F27C00F6488D /* response.cpp in Sources */,
+				0DC519D71DC1F27C00F6488D /* utils.cpp in Sources */,
+				8E86576D1D50B6090055F996 /* IMNetworkDataModel.mm in Sources */,
+				8E92D91C1BF7571F00F3C5A7 /* IMGroupMemberModel.mm in Sources */,
+				8E5980881C143C270047F64F /* SeenPacketDTO.cpp in Sources */,
+				8E92D8E21BF7564700F3C5A7 /* ApiStatus.cpp in Sources */,
+				8E64C7DA1E361E4C003912EC /* http_cloud_config.cpp in Sources */,
+				8E92D91E1BF7571F00F3C5A7 /* IMAdapter.mm in Sources */,
+				8EC3B7B71C60ABC000EB1FD4 /* IMGroupActivityModel.mm in Sources */,
+				8E92D8EE1BF7564700F3C5A7 /* IChatEventHandler.cpp in Sources */,
+				8E39196C1DCF06E400586616 /* ConversationDTO.cpp in Sources */,
+				8E73B6F61D0C3520002192E2 /* IMPublicChatMemberModel.mm in Sources */,
+				8E92D8911BF7534800F3C5A7 /* IMSDK.mm in Sources */,
+				8E92D8A41BF7562600F3C5A7 /* MemberDTO.cpp in Sources */,
+				8E92D8F61BF7564700F3C5A7 /* PacketProcessor.cpp in Sources */,
+				8E19A5D81CCB46120008610B /* UnifiedProcessor.cpp in Sources */,
+				8E92D8FF1BF7564700F3C5A7 /* ResourceManager.cpp in Sources */,
+				8E92D89F1BF7562600F3C5A7 /* ByteArray.cpp in Sources */,
+				8E3A80951E9A189000FF2B39 /* HashAlgorithm.cpp in Sources */,
+				0DC51A081DC1FB4D00F6488D /* CloudNotificationHandler.cpp in Sources */,
+				8E19A5D21CCB46120008610B /* FriendInformation.cpp in Sources */,
+				8E6BFEB71C5E020E003F9C08 /* GroupDTO.cpp in Sources */,
+				8E92D8DA1BF7564700F3C5A7 /* Chat.cpp in Sources */,
+				8E6BFEB51C5E020E003F9C08 /* FriendMessageStatusDTO.cpp in Sources */,
+				8E92D8EB1BF7564700F3C5A7 /* EventProcessor.cpp in Sources */,
+				8E92D9241BF7571F00F3C5A7 /* IMHandlerDelegate.mm in Sources */,
+				8E92D8E41BF7564700F3C5A7 /* ChatEvent.cpp in Sources */,
+				8E2A569D1D053665003B5630 /* SDKMessageDTO.cpp in Sources */,
+				8E92D8DF1BF7564700F3C5A7 /* Socket.cpp in Sources */,
+				8E5317301E127AFE00BD39CE /* sha1.cpp in Sources */,
+				8E92D8DE1BF7564700F3C5A7 /* PacketReceiver.cpp in Sources */,
+				8EE409731D3E319700650C89 /* IOSLogger.mm in Sources */,
+				8E19A5CF1CCB46120008610B /* DuplicateChecker.cpp in Sources */,
+				8E92D8F01BF7564700F3C5A7 /* KeepalivePacket.cpp in Sources */,
+				8EB70EDB1D0D4171009ADE7F /* IMGroupInformationModel.mm in Sources */,
+				8E73B6F21D0BE5E3002192E2 /* IMRoomModel.mm in Sources */,
+				8EDD07601D4F5EC10006DBB3 /* DataCounter.cpp in Sources */,
+				8E92D8F41BF7564700F3C5A7 /* Logger.cpp in Sources */,
+				8E6BFEB61C5E020E003F9C08 /* GroupActivityDTO.cpp in Sources */,
+				8E334A171DD337D700468BFD /* worker.cpp in Sources */,
+				8E19A5C21CCB45080008610B /* RoomDTO.cpp in Sources */,
+				8EC635DE1D0804E40098C25C /* IMMessageModel.mm in Sources */,
+				8E92D8A61BF7562600F3C5A7 /* PacketDTO.cpp in Sources */,
+				8EC3B7AF1C60A73B00EB1FD4 /* IMGroupModel.mm in Sources */,
+				8E92D9011BF7564700F3C5A7 /* Scheduler.cpp in Sources */,
+				8E92D8DC1BF7564700F3C5A7 /* KeepaliveProcessor.cpp in Sources */,
+				8E92D8E01BF7564700F3C5A7 /* ChatPacketBuilder.cpp in Sources */,
+				8E92D8E71BF7564700F3C5A7 /* Connection.cpp in Sources */,
+				8E92D9221BF7571F00F3C5A7 /* IMHandlerAdapter.mm in Sources */,
+				8EC3B7AB1C60A57C00EB1FD4 /* IMMessageStatusModel.mm in Sources */,
+				8E92D9061BF7564700F3C5A7 /* Thread.cpp in Sources */,
+				8E92D9201BF7571F00F3C5A7 /* IMApiStatus.mm in Sources */,
+				8E61011F1DFD404500084CF7 /* chunk_progress_handler.cpp in Sources */,
+				8E059A701CCC7DBF00F3B915 /* IMPacketTimeId.mm in Sources */,
+				8E19A5C01CCB45080008610B /* PublicChatMemberDTO.cpp in Sources */,
+				8E92D8E91BF7564700F3C5A7 /* Event.cpp in Sources */,
+				8E92D9261BF7571F00F3C5A7 /* IMManager.mm in Sources */,
+				8E19A5D61CCB46120008610B /* PacketTimeId.cpp in Sources */,
+				8EB70ED71D0D40FC009ADE7F /* IMFriendInformationModel.mm in Sources */,
+				8E92D8FD1BF7564700F3C5A7 /* ResendProcessor.cpp in Sources */,
+				8E92D8A11BF7562600F3C5A7 /* ChatParser.cpp in Sources */,
+				8EABC8E91D3614E8007BD673 /* GroupInformation.cpp in Sources */,
+				8E92D8A81BF7562600F3C5A7 /* PacketTemplate.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		77A277C71BF74F4E0051DB07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		77A277C81BF74F4E0051DB07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		77A277CA1BF74F4E0051DB07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../ipvcore/core,
+					../../../../libs/curl/include/nix,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					../../../lib/filetransfer,
+					"$(PROJECT_DIR)",
+					../../../../libs/curl/ios,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lcurl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77A277CB1BF74F4E0051DB07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../ipvcore/core,
+					../../../../libs/curl/include/nix,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					../../../lib/filetransfer,
+					"$(PROJECT_DIR)",
+					../../../../libs/curl/ios,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lcurl",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		77A277D11BF74F8C0051DB07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77A277D21BF74F8C0051DB07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77A277B01BF74F4E0051DB07 /* Build configuration list for PBXProject "IMSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A277C71BF74F4E0051DB07 /* Debug */,
+				77A277C81BF74F4E0051DB07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A277C91BF74F4E0051DB07 /* Build configuration list for PBXNativeTarget "IMSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A277CA1BF74F4E0051DB07 /* Debug */,
+				77A277CB1BF74F4E0051DB07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A277D01BF74F8C0051DB07 /* Build configuration list for PBXAggregateTarget "IMSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A277D11BF74F8C0051DB07 /* Debug */,
+				77A277D21BF74F8C0051DB07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77A277AD1BF74F4E0051DB07 /* Project object */;
+}

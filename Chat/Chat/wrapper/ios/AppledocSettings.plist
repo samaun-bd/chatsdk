@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>--project-name</key>
+    <string>IMSDK</string>
+    <key>--project-company</key>
+    <string>IPVision</string>
+    <key>--company-id</key>
+    <string>com.ipvision</string>
+
+    <key>--output</key>
+    <string>appledoc</string>
+
+    <key>--create-docset</key>
+    <false/>
+
+    <key>--index-desc</key>
+    <string>index.markdown</string>
+
+    <key>--ignore</key>
+    <array>
+        <string>Pods</string>
+        <string>Libs</string>
+        <string>JadeTests</string>
+        <string>*.framework</string>
+    </array>
+
+</dict>
+</plist>

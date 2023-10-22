@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>src/ByteArray.h</itemPath>
+      <itemPath>src/ChatParser.h</itemPath>
+      <itemPath>src/ConversationDTO.h</itemPath>
+      <itemPath>src/DataCounter.h</itemPath>
+      <itemPath>src/FriendMessageStatusDTO.h</itemPath>
+      <itemPath>src/GroupActivityDTO.h</itemPath>
+      <itemPath>src/GroupDTO.h</itemPath>
+      <itemPath>src/MemberDTO.h</itemPath>
+      <itemPath>src/PacketDTO.h</itemPath>
+      <itemPath>src/PacketTemplate.h</itemPath>
+      <itemPath>src/ParserTypes.h</itemPath>
+      <itemPath>src/PublicChatMemberDTO.h</itemPath>
+      <itemPath>src/RoomDTO.h</itemPath>
+      <itemPath>src/SDKMessageDTO.h</itemPath>
+      <itemPath>src/SeenPacketDTO.h</itemPath>
+      <itemPath>src/global.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>src/ByteArray.cpp</itemPath>
+      <itemPath>src/ChatParser.cpp</itemPath>
+      <itemPath>src/ConversationDTO.cpp</itemPath>
+      <itemPath>src/DataCounter.cpp</itemPath>
+      <itemPath>src/FriendMessageStatusDTO.cpp</itemPath>
+      <itemPath>src/GroupActivityDTO.cpp</itemPath>
+      <itemPath>src/GroupDTO.cpp</itemPath>
+      <itemPath>src/MemberDTO.cpp</itemPath>
+      <itemPath>src/PacketDTO.cpp</itemPath>
+      <itemPath>src/PacketTemplate.cpp</itemPath>
+      <itemPath>src/PublicChatMemberDTO.cpp</itemPath>
+      <itemPath>src/RoomDTO.cpp</itemPath>
+      <itemPath>src/SDKMessageDTO.cpp</itemPath>
+      <itemPath>src/SeenPacketDTO.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="Byte Parse Test"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/chatparsertest2.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2"
+                     displayName="Chat Parser Test"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/ChatParserTest.cpp</itemPath>
+        <itemPath>tests/ChatParserTest.h</itemPath>
+        <itemPath>tests/chatparsertestrunner.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="Byte Parse Test"
+                     projectFiles="true"
+                     kind="TEST">
+      </logicalFolder>
+      <logicalFolder name="f2"
+                     displayName="Chat Parser Test"
+                     projectFiles="true"
+                     kind="TEST">
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <architecture>2</architecture>
+          <standard>10</standard>
+        </cTool>
+        <ccTool>
+          <architecture>2</architecture>
+          <standard>8</standard>
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+          <commandLine>-fPIC -std=c++11</commandLine>
+          <preprocessorList>
+            <Elem>__cplusplus=201103L</Elem>
+          </preprocessorList>
+        </ccTool>
+        <archiverTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libchatparser.a</output>
+        </archiverTool>
+      </compileType>
+      <packaging>
+        <packType>Zip</packType>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}packet_dto.h"
+                            from="src/packet_dto.h"
+                            perm="644"
+                            owner="root"
+                            group="bin"/>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}chatparser.h"
+                            from="src/chatparser.h"
+                            perm="644"
+                            owner="root"
+                            group="bin"/>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}libchatparser.a"
+                            from="dist/Debug/GNU-Linux-x86/libchatparser.a"
+                            perm="644"
+                            owner="root"
+                            group="bin"/>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}lib/${OUTPUT_BASENAME}"
+                            from="${OUTPUT_PATH}"
+                            perm="644"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <folder path="TestFiles">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/local/lib</pElem>
+          </linkerAddLib>
+          <commandLine>-lcppunit</commandLine>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="src/ByteArray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ByteArray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ChatParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ChatParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ConversationDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ConversationDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DataCounter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DataCounter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FriendMessageStatusDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FriendMessageStatusDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/GroupActivityDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/GroupActivityDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/GroupDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/GroupDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MemberDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MemberDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PacketDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PacketDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PacketTemplate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PacketTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ParserTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PublicChatMemberDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PublicChatMemberDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RoomDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RoomDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SDKMessageDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SDKMessageDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SeenPacketDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SeenPacketDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/ChatParserTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ChatParserTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/chatparsertest2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/chatparsertestrunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="src/ByteArray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ByteArray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ChatParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ChatParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ConversationDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ConversationDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DataCounter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DataCounter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FriendMessageStatusDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FriendMessageStatusDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/GroupActivityDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/GroupActivityDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/GroupDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/GroupDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MemberDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MemberDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PacketDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PacketDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PacketTemplate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PacketTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ParserTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PublicChatMemberDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PublicChatMemberDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RoomDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RoomDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SDKMessageDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SDKMessageDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SeenPacketDTO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SeenPacketDTO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/ChatParserTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ChatParserTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/chatparsertest2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/chatparsertestrunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

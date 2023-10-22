@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>3cb50a7d-3611-47f4-8601-14b3e1969739</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChatEventHandler.cpp" />
+    <ClCompile Include="DataConvertionUtility.cpp" />
+    <ClCompile Include="IMManager.cpp" />
+    <ClCompile Include="ManagedApiStatus.cpp" />
+    <ClCompile Include="ManagedConversationDTO.cpp" />
+    <ClCompile Include="ManagedDataCounter.cpp" />
+    <ClCompile Include="ManagedDataEncryption.cpp" />
+    <ClCompile Include="ManagedFriendInformation.cpp" />
+    <ClCompile Include="ManagedFriendMessageStatusDTO.cpp" />
+    <ClCompile Include="ManagedGroupActivityDTO.cpp" />
+    <ClCompile Include="ManagedGroupDTO.cpp" />
+    <ClCompile Include="ManagedGroupInformation.cpp" />
+    <ClCompile Include="ManagedInternerChecker.cpp" />
+    <ClCompile Include="ManagedMemberDTO.cpp" />
+    <ClCompile Include="ManagedMessageDTO.cpp" />
+    <ClCompile Include="ManagedPacketTimeID.cpp" />
+    <ClCompile Include="ManagedPublicChatMemberDTO.cpp" />
+    <ClCompile Include="ManagedRoomDTO.cpp" />
+    <ClCompile Include="ManagedSeenPacketDTO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChatEventHandler.h" />
+    <ClInclude Include="DataConvertionUtility.h" />
+    <ClInclude Include="IMManager.h" />
+    <ClInclude Include="ManagedApiStatus.h" />
+    <ClInclude Include="ManagedConversationDTO.h" />
+    <ClInclude Include="ManagedDataCounter.h" />
+    <ClInclude Include="ManagedDataEncryption.h" />
+    <ClInclude Include="ManagedFriendInformation.h" />
+    <ClInclude Include="ManagedFriendMessageStatusDTO.h" />
+    <ClInclude Include="ManagedGroupActivityDTO.h" />
+    <ClInclude Include="ManagedGroupDTO.h" />
+    <ClInclude Include="ManagedGroupInformation.h" />
+    <ClInclude Include="ManagedInternerChecker.h" />
+    <ClInclude Include="ManagedMemberDTO.h" />
+    <ClInclude Include="ManagedMessageDTO.h" />
+    <ClInclude Include="ManagedPacketTimeID.h" />
+    <ClInclude Include="ManagedPublicChatMemberDTO.h" />
+    <ClInclude Include="ManagedRoomDTO.h" />
+    <ClInclude Include="ManagedSeenPacketDTO.h" />
+  </ItemGroup>
+</Project>

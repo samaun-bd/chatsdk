@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ChatParser\src\ByteArray.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\ChatParser.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\ConversationDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\DataCounter.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\FriendMessageStatusDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\GroupActivityDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\GroupDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\MemberDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\PacketDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\PacketTemplate.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\PublicChatMemberDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\RoomDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\SDKMessageDTO.cpp" />
+    <ClCompile Include="..\..\..\..\ChatParser\src\SeenPacketDTO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ChatParser\src\ByteArray.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\ChatParser.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\ConversationDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\DataCounter.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\FriendMessageStatusDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\global.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\GroupActivityDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\GroupDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\MemberDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\PacketDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\PacketTemplate.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\ParserTypes.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\PublicChatMemberDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\RoomDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\SDKMessageDTO.h" />
+    <ClInclude Include="..\..\..\..\ChatParser\src\SeenPacketDTO.h" />
+  </ItemGroup>
+</Project>

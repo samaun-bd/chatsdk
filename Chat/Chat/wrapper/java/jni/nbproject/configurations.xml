@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>ArrayListManipulation.h</itemPath>
+      <itemPath>ChatEventHandler.h</itemPath>
+      <itemPath>ConversationDTOConversion.cpp</itemPath>
+      <itemPath>ConversationDTOConversion.h</itemPath>
+      <itemPath>DataCounterConversion.h</itemPath>
+      <itemPath>FriendMessageStatusDTOConversion.h</itemPath>
+      <itemPath>GroupActivityDTOConversion.h</itemPath>
+      <itemPath>GroupDTOConversion.h</itemPath>
+      <itemPath>MemberDTOConversion.h</itemPath>
+      <itemPath>PublicChatMemberDTOConversion.h</itemPath>
+      <itemPath>RoomDTOConversion.h</itemPath>
+      <itemPath>SDKMessageDTOConversion.h</itemPath>
+      <itemPath>SeenPacketDTOConversion.h</itemPath>
+      <itemPath>com_ringid_imsdk_Chat.h</itemPath>
+      <itemPath>com_ringid_imsdk_DataEncryption.h</itemPath>
+      <itemPath>com_ringid_imsdk_InternetChecker.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>ArrayListManipulation.cpp</itemPath>
+      <itemPath>ChatEventHandler.cpp</itemPath>
+      <itemPath>DataCounterConversion.cpp</itemPath>
+      <itemPath>FriendMessageStatusDTOConversion.cpp</itemPath>
+      <itemPath>GroupActivityDTOConversion.cpp</itemPath>
+      <itemPath>GroupDTOConversion.cpp</itemPath>
+      <itemPath>MemberDTOConversion.cpp</itemPath>
+      <itemPath>PublicChatMemberDTOConversion.cpp</itemPath>
+      <itemPath>RoomDTOConversion.cpp</itemPath>
+      <itemPath>SDKMessageDTOConversion.cpp</itemPath>
+      <itemPath>SeenPacketDTOConversion.cpp</itemPath>
+      <itemPath>com_ringid_imsdk_Chat.cpp</itemPath>
+      <itemPath>com_ringid_imsdk_DataEncryption.cpp</itemPath>
+      <itemPath>com_ringid_imsdk_InternetChecker.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>../../../src</pElem>
+            <pElem>../../../../ChatParser/src</pElem>
+            <pElem>/usr/lib/jvm/java-8-oracle/include/linux</pElem>
+            <pElem>/usr/lib/jvm/java-8-oracle/include</pElem>
+            <pElem>/usr/lib/jvm/jdk1.8.0_66/include</pElem>
+            <pElem>/usr/lib/jvm/jdk1.8.0_66/include/linux</pElem>
+            <pElem>/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/include</pElem>
+            <pElem>/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/include/darwin</pElem>
+            <pElem>../../../../../../ipvcore/core</pElem>
+          </incDir>
+          <commandLine>-pthread -fPIC -shared</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libimsdk.${CND_DLIB_EXT}</output>
+          <commandlineTool>g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../../.."
+                            CT="3"
+                            CN="debug_static"
+                            AC="true"
+                            BL="true"
+                            WD="../../.."
+                            BC="${MAKE}  -f Makefile CONF=debug_static"
+                            CC="${MAKE}  -f Makefile CONF=debug_static clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libchat.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../../../../ChatParser"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../../../../ChatParser"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libchatparser.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../../../../../../ipvcore"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../../../../../../ipvcore"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libipvcore.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="ArrayListManipulation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ArrayListManipulation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ChatEventHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ChatEventHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConversationDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ConversationDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataCounterConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FriendMessageStatusDTOConversion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="FriendMessageStatusDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GroupActivityDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GroupActivityDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GroupDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GroupDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MemberDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MemberDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PublicChatMemberDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PublicChatMemberDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RoomDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RoomDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SDKMessageDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SDKMessageDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SeenPacketDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SeenPacketDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_Chat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_Chat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_DataEncryption.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_DataEncryption.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_InternetChecker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_InternetChecker.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="ArrayListManipulation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ArrayListManipulation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ChatEventHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ChatEventHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConversationDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ConversationDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataCounterConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FriendMessageStatusDTOConversion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="FriendMessageStatusDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GroupActivityDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GroupActivityDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GroupDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GroupDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MemberDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MemberDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PublicChatMemberDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PublicChatMemberDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RoomDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RoomDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SDKMessageDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SDKMessageDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SeenPacketDTOConversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SeenPacketDTOConversion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_Chat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_Chat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_DataEncryption.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_DataEncryption.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_InternetChecker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="com_ringid_imsdk_InternetChecker.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

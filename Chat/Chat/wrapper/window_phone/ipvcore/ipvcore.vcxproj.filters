@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cloud">
+      <UniqueIdentifier>{47cb3f6d-d8fa-4005-92d0-0fe408f72452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="generic">
+      <UniqueIdentifier>{d7593517-b876-4b72-8eda-2ca26b16ec5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{c458d321-809d-4a4a-ae03-90014b0e6e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{1edca407-95b5-4961-a0f4-94b0f2d0bc78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\json">
+      <UniqueIdentifier>{8842de60-55b6-4dde-b882-48110a354528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\mcmp">
+      <UniqueIdentifier>{99b6a24c-ab64-4fc1-aa4e-38f927a97c39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\scsp">
+      <UniqueIdentifier>{32ba9305-f7c2-4ef2-9a23-f604559c1c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="generic\log">
+      <UniqueIdentifier>{0472b3f1-cbdd-49dd-9ee2-ac1fef046727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="generic\log\utils">
+      <UniqueIdentifier>{3711de4b-0b59-4f18-ac70-675e84acc936}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\blocking_downloader.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\blocking_progress_handler.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\blocking_uploader.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\chunk_progress_handler.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\chunking_downloader.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\chunking_uploader.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\encode_decode_util.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\manager.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\non_blocking_downloader.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\non_blocking_uploader.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\response.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\cloud\utils.cpp">
+      <Filter>cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\byte_parser.cpp">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\file_system.cpp">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\http_cloud_config.cpp">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\types.cpp">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\utils.cpp">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\worker.cpp">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\log\manager.cpp">
+      <Filter>generic\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\log\utils\log_console.cpp">
+      <Filter>generic\log\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\log\utils\log_interface.cpp">
+      <Filter>generic\log\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\generic\log\utils\log_sys.cpp">
+      <Filter>generic\log\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\http\curl_handler.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\http\manager.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\http\request.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\http\response.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\http\utils.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\ipvcore\core\third_party\json\json11.cpp">
+      <Filter>third_party\json</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\base_downloader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\base_uploader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\blocking_downloader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\blocking_progress_handler.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\blocking_uploader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\chunk_progress_handler.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\chunking_downloader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\chunking_uploader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\config.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\encode_decode_util.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\manager.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\non_blocking_downloader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\non_blocking_uploader.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\notification_handler.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\response.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\types.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\cloud\utils.h">
+      <Filter>cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\byte_parser.h">
+      <Filter>generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\file_system.h">
+      <Filter>generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\http_cloud_config.h">
+      <Filter>generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\types.h">
+      <Filter>generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\utils.h">
+      <Filter>generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\worker.h">
+      <Filter>generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\log\logger.h">
+      <Filter>generic\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\log\manager.h">
+      <Filter>generic\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\log\utils\log_console.h">
+      <Filter>generic\log\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\log\utils\log_interface.h">
+      <Filter>generic\log\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\generic\log\utils\log_sys.h">
+      <Filter>generic\log\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\config.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\curl_handler.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\handler.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\http_dto.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\manager.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\progess_handler.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\request.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\response.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\http\utils.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\third_party\json\json11.h">
+      <Filter>third_party\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\third_party\mcmp\blockingconcurrentqueue.h">
+      <Filter>third_party\mcmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\third_party\mcmp\concurrentqueue.h">
+      <Filter>third_party\mcmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\third_party\scsp\atomicops.h">
+      <Filter>third_party\scsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\ipvcore\core\third_party\scsp\readerwriterqueue.h">
+      <Filter>third_party\scsp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
